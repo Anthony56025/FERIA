@@ -1,0 +1,81 @@
+/* Botón flotante del chat: logo ocupa todo el botón */
+df-messenger .df-messenger-launcher {
+  background: none !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  width: 64px !important;
+  height: 64px !important;
+  min-width: 64px !important;
+  min-height: 64px !important;
+  box-shadow: 0 4px 16px #d6bfae55;
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  z-index: 9999 !important;
+}
+
+df-messenger .df-messenger-launcher svg {
+  display: none !important; /* Oculta el ícono por defecto */
+}
+
+df-messenger .df-messenger-launcher::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/iconos/Logo.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Cambia el color del header del chat */
+df-messenger .df-messenger-chat-header {
+  background: #A9746E !important;
+  color: #fff6e5 !important;
+  font-family: 'Baloo 2', Arial, sans-serif !important;
+  font-size: 1.1em !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+
+/* Fondo del chat */
+df-messenger .df-messenger-chat {
+  background: #FFF6E5 !important;
+  font-family: 'Baloo 2', Arial, sans-serif !important;
+}
+
+/* Mensajes del usuario */
+df-messenger .df-messenger-user-message {
+  background: #A9746E !important;
+  color: #fff !important;
+  border-radius: 16px !important;
+  font-family: 'Baloo 2', Arial, sans-serif !important;
+}
+
+/* Mensajes del bot */
+df-messenger .df-messenger-bot-message {
+  background: #fff !important;
+  color: #3E3E3E !important;
+  border-radius: 16px !important;
+  font-family: 'Baloo 2', Arial, sans-serif !important;
+  box-shadow: 0 2px 8px #d6bfae33;
+}
+
+/* Input del usuario */
+df-messenger .df-messenger-input-box {
+  background: #fff !important;
+  border-radius: 12px !important;
+  border: 2px solid #D6BFAE !important;
+  color: #3E3E3E !important;
+  font-family: 'Baloo 2', Arial, sans-serif !important;
+}
+
+/* Botón de enviar */
+df-messenger .df-messenger-send-icon {
+  fill: #A9746E !important;
+}
